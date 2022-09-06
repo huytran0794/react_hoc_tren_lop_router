@@ -5,10 +5,12 @@ import LoginPage from "./Pages/LoginPage/LoginPage";
 import HomePage from "./Pages/HomePage/HomePage";
 import DetailPage from "./Pages/DetailPage/DetailPage";
 import Header from "./components/Header";
+import DemoHook from "./DemoHook/DemoHook";
+
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Header />
         <Switch>
           <Route path={"/"} exact component={HomePage} />
@@ -18,7 +20,8 @@ function App() {
             render={(routeProps) => <DetailPage {...routeProps} />}
           />
         </Switch>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <DemoHook />
     </div>
   );
 }
